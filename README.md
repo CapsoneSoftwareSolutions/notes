@@ -47,8 +47,6 @@ INSTALLED_APPS = (
 )
 </pre>
 
-please run on virtual env pinax
-
 
 ### Microsoft Translator usage
 
@@ -56,31 +54,6 @@ please run on virtual env pinax
 +	>>> trans = Translator('9c86952f-4c35-4ffe-9987-24726e3a881b', 'hpnPDDdp8JxkYH0xBl/37EM1wN8S1DE4s07dbBMkidM')
 +	>>> print trans.translate("Hello", "pt")
 
-
-### todo
-
-+    ASK button: iTechTalents website will allow job seekers to ask any relevant questions. Any registered member should be allowed to reply/answer to the questions. Questions can be posted on specific topic such as general purpose or under list of topics products, telecommunication, pharmaceutical, graphics, design, business, gaming or only visible to another recruiter/job seeker.
-
-+    Follow Question/Answer: Registered users must be able to follow any â��ASKâ�� question or to the replied answer. Another registered user can be able to upvote and downvote the answer.
-
-
-
-### feedparser
-
-the file i just copied into root directory.
-actually feeds is using this file.
-if you are using python3 please setup sgmllib.py from feedparser downloaded folder.
-
-
-### feeds
-
-remember i added a template folder.
-also some things on urls.py and setting.py (ie INSTALLED APPS)
-
-
-### rosetta
-
-this is checking using django-rosetta. at github mbi/django-rosetta
 
 
 ### solr installation
@@ -112,20 +85,20 @@ this is checking using django-rosetta. at github mbi/django-rosetta
 +    AWSSecretKey=k/3v7uYOvArkPsSrCOWoUwsdd8YkQ/Jo8uhyN6NK
 
 
-## Recursive Permission Changes
+### Recursive Permission Changes
 
-sudo chmod 777 -R /path/to/someDirectory
+    sudo chmod 777 -R /path/to/someDirectory
 
 
-# Flatpages app
+## Flatpages app
 
-Flatpages used for  pages, such as â��Aboutâ�� or â��Privacy Policyâ�� pages,
+Flatpages used for staticpages
 
 ### To install the flatpages app, follow these steps:
 
 +    Add `django.contrib.sites` to your INSTALLED_APPS setting
-
-+    Also make sure youâ��ve correctly set SITE_ID.
+ 
++    Also make sure you have correctly set SITE_ID.
 
 +    Add `django.contrib.flatpages` to your INSTALLED_APPS setting.
 
@@ -178,11 +151,11 @@ Flatpages used for  pages, such as â��Aboutâ�� or â��Privacy Poli
 
 example usages:
 
-	>>> from apscheduler.scheduler import Scheduler
-	>>> sc=Scheduler
-	>>> sc=Scheduler()
-	>>> sc.start()
-	>>> def job_function():
-	...   print 'hello'
-	... 
-	>>> sc.add_cron_job(job_function,month='7',day='24',hour='10',minute=50)
+    >>> from apscheduler.scheduler import Scheduler
+    >>> sc=Scheduler
+    >>> sc=Scheduler()
+    >>> sc.start()
+    >>> def job_function():
+    ...   print 'hello'
+    ... 
+    >>> sc.add_cron_job(job_function,month='7',day='24',hour='10',minute=50)
