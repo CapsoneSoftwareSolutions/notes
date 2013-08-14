@@ -129,7 +129,7 @@ Flatpages used for staticpages
 
 ### To clone Karthik
 
-`git clone capsone-system7@192.168.0.33:/home/capsone-system7/Karthik/Git/repo/userreg.git`
+`git clone capsone-system7@192.168.1.33:/home/capsone-system7/Karthik/Git/repo/userreg.git`
 
 ### To clone my Server Repo(Jobsite)
 
