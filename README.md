@@ -131,6 +131,16 @@ Flatpages used for staticpages
 
 `git clone capsone-system7@192.168.1.33:/home/capsone-system7/Karthik/Git/repo/userreg.git`
 
+creating a new branch and push it to server
+
+`git checkout -b your_branch`
+`git push capsone-system7@192.168.1.33:/home/capsone-system7/Karthik/Git/repo/userreg.git forum`
+
+to track that branch by some other
+
+`git checkout --track origin/forum`
+
+
 ### To clone my Server Repo(Jobsite)
 
 `git clone -b master suhail@192.168.1.201:/home/github/jobsite `
