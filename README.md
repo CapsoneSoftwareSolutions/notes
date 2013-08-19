@@ -117,44 +117,51 @@ Flatpages used for staticpages
 +    sudo apt-get install sublime-text-installer
 
 
-## GIT
+### GIT
 
-### To see the existing url just,
-
-`git config  remote.origin.url`
-
-### To add new remore url,
-
-`git remote set-url origin suhail@192.168.1.201:/home/github/jobsite`
-
-### To clone Karthik
-
-`git clone capsone-system7@192.168.1.33:/home/capsone-system7/Karthik/Git/repo/userreg.git`
-
-creating a new branch and push it to server
-
-`git checkout -b your_branch`
-`git push capsone-system7@192.168.1.33:/home/capsone-system7/Karthik/Git/repo/userreg.git forum`
-
-to track that branch by some other
-
-`git checkout --track origin/forum`
-
-
-### To clone my Server Repo(Jobsite)
-
-`git clone -b master suhail@192.168.1.201:/home/github/jobsite `
-
-### How to setup git project in server
+##### How to setup git project in server
 
 +    `git clone --bare gsm ngsm`
 +    `scp -r ngsm suhail@192.168.1.201:/home/github`
 
+##### To clone my Server Repo(Jobsite) a perticular branch say master
 
-### Trying to create a new git branch and push it to server
+`git clone -b master suhail@192.168.1.201:/home/github/jobsite`
 
-+    `git checkout -b your_branch`
-+    `git push suhail@192.168.0.201:/home/github/jobsite your_branch`
+
+##### To see the existing remote url
+
+`git config  remote.origin.url`
+
+##### To add new remore url,
+
+`git remote set-url origin suhail@192.168.1.201:/home/github/jobsite`
+
+
+##### To clone Karthik
+
+`git clone capsone-system7@192.168.1.33:/home/capsone-system7/Karthik/Git/repo/userreg.git`
+
+
+##### creating a new branch and push it to server
+
+`git checkout -b your_branch`
+`git push capsone-system7@192.168.1.33:/home/capsone-system7/Karthik/Git/repo/userreg.git forum`
+
+##### to track that branch by some other
+
+`git checkout --track origin/forum`
+
+##### push and pull perticular branch
+
+`git push origin forum`
+`git pull origin forum`
+
+
+##### git checkout to a perticular commit
+
+`git checkout [revision] .`
+`wherer [revision] is the commit hash (for example: 12345678901234567890123456789012345678ab).`
 
 
 ### APScheduler
