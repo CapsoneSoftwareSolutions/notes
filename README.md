@@ -208,3 +208,8 @@ This creates the venv folder inside ~/Envs.
 ##### List all of the environments.
 
 `lsvirtualenv`
+
+
+crontab -e    Edit your crontab file, or create one if it doesn’t already exist.
+crontab -l      Display your crontab file.
+crontab -r      Remove your crontab file.
