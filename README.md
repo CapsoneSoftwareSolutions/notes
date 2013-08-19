@@ -176,3 +176,35 @@ example usages:
     ...   print 'hello'
     ... 
     >>> sc.add_cron_job(job_function,month='7',day='24',hour='10',minute=50)
+    
+    
+### virtualenvwrapper
+
+##### To install (make sure virtualenv is already installed):
+
+    $ pip install virtualenvwrapper
+    $ export WORKON_HOME=~/Envs
+    $ source /usr/local/bin/virtualenvwrapper.sh
+    
+
+##### Create a virtual environment:
+
+`$ mkvirtualenv venv`
+
+This creates the venv folder inside ~/Envs.
+
+##### Work on a virtual environment:
+
+`$ workon venv`
+
+##### Deactivating is still the same:
+
+`$ deactivate`
+
+##### To delete:
+
+`$ rmvirtualenv venv`
+
+##### List all of the environments.
+
+`lsvirtualenv`
